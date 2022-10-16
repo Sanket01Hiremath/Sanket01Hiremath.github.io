@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanket Hiremath</title>
+    <link rel="icon" type="image/x-icon" href="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png">
     <Style>
         body{
             background-color: rgb(71, 41, 125);
@@ -18,19 +19,22 @@
             padding:10px 0px 10px 0px;
             display: flex;
             align-items: center;
-
+            justify-content: space-between;
         }
         h1{
             color:white;
             margin-left: 20px;
         }
-        #navbar>img{
+        #navbar>div{
+            display: flex;
+            align-items: center;
+        }
+        #navbar>div>img{
             width:40px;
             height:40px;
             margin-left: 30px;
         }
         #image{
-            
             display: flex;
             align-items: center;
             width:300px;
@@ -42,7 +46,7 @@
             display: none;
         }
         #image:hover ,#about:hover{
-            width: 100%; 
+            width:80%; 
         }
         #image>img{
             border: 2px solid white;
@@ -50,12 +54,29 @@
             width:250px;
             margin:23px;
         }
+        #icons{
+            width:auto;
+            margin-right: 30px;
+        }
+        #icons img{
+            width: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
     </Style>
 </head>
 <body>
     <div id="navbar">
-        <img src="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png" alt="">
-        <h1>Sanket Hiremath</h1>
+        <div>
+            <img src="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png" alt="">
+            <h1>Sanket Hiremath</h1>
+        </div>
+        
+        <div id="icons">
+            <a href="https://github.com/Sanket01Hiremath"><img src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt=""></a>
+            <a href="https://www.linkedin.com/in/Sanket01Hiremath/"><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt=""></a>
+            <a href=""><img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt=""></a>
+        </div>
     </div>
 
     <div id="image">
