@@ -1,0 +1,187 @@
+body{
+    background-color: #5cdb95;
+}
+#navbar{
+    width:100%;
+    background-color: #5cdb95;
+    border-radius: 10px;
+    box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
+    border: 0px;
+    padding:10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+#home h1{
+    color:white;
+    margin-left: 20px;
+    font-size: 45px;
+}
+#navbar>div{
+    display: flex;
+    align-items: center;
+}
+#navbar>div>img{
+    width:40px;
+    height:40px;
+    margin-left: 30px;
+}
+#image{
+    display: flex;
+    align-items: center;
+    width:300px;
+    height:300px;
+    margin: auto;
+    margin-top:50px;
+    transition: width 2s;
+}
+#about{
+    height:200px;
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+    opacity:0;
+    overflow: hidden;
+    background-color: #05386b72;
+}
+#about h1{
+    color:white;
+    margin-left: 20px;
+    font-size: 35px;
+}
+#about>p{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+#image>img{
+    border: 2px solid white;
+    border-radius: 50%;
+    width:250px;
+    margin:23px;
+}
+#icons{
+    display: flex;
+    gap: 10px;
+    width:auto;
+    margin-right: 30px;
+}
+#icons img,.icon{
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#menu>a{
+    width:100px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    color:#05386B;
+    font-weight: bold;
+    font-size:18px;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+#menu>a:hover{
+    background-color: #05386b1c;
+    color: white;
+    border-bottom: 2px solid #05386B;
+}
+
+#home{
+    text-align: center;
+}
+#skills{
+    margin-top: 50px;
+    padding:50px 0px;
+    text-align: center;
+    background-color: #05386B;
+
+}
+.h1{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+#skills>div{
+    padding:40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#skills>div>div>img{
+    background-color: rgba(0, 0, 0, 0.515);
+    border-radius: 50%;
+    border:4px solid white;
+    width:130px;
+    box-shadow: rgba(255, 255, 255, 0.586) 0px 6px 12px -2px, rgba(255, 255, 255, 0.596) 0px 3px 7px -3px;
+}
+#projects{
+    margin-top: 50px;
+    text-align: center;
+}
+#projects>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#projects>div>div{
+    margin-top: 50px;
+    text-align: left;
+    width:46%;
+}
+#projects>div>div>img{
+    width:100%;
+}
+.p{
+    color: #05386B;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#contacts{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.752);
+}
+#contacts>div:last-child{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+#contacts>div img{
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* popup message */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.485);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    left: -35px;
+    top: -35px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    transition: 2s;
+    visibility: visible;
+  }

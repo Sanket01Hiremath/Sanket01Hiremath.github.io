@@ -6,70 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanket Hiremath</title>
     <link rel="icon" type="image/x-icon" href="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png">
-    <Style>
-        body{
-            background-color: rgb(71, 41, 125);
-        }
-        #navbar{
-            width:100%;
-            background-color: rgba(79, 79, 79, 0.173);
-            border-radius: 10px;
-            box-shadow: rgba(255, 255, 255, 0.365) 0px 3px 8px;;
-            border: 0px;
-            padding:10px 0px 10px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        h1{
-            color:white;
-            margin-left: 20px;
-        }
-        #navbar>div{
-            display: flex;
-            align-items: center;
-        }
-        #navbar>div>img{
-            width:40px;
-            height:40px;
-            margin-left: 30px;
-        }
-        #image{
-            display: flex;
-            align-items: center;
-            width:300px;
-            margin: auto;
-            margin-top:50px;
-            transition: width 4s;
-        }
-        #about{
-            display: none;
-        }
-        #image:hover ,#about:hover{
-            width:80%; 
-        }
-        #image>img{
-            border: 2px solid white;
-            border-radius: 50%;
-            width:250px;
-            margin:23px;
-        }
-        #icons{
-            width:auto;
-            margin-right: 30px;
-        }
-        #icons img{
-            width: 40px;
-            background-color: white;
-            border-radius: 50%;
-        }
-    </Style>
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
     <div id="navbar">
         <div>
             <img src="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png" alt="">
-            <h1>Sanket Hiremath</h1>
+        </div>
+        <div id="menu">
+            <a href="#home">Home</a>
+            <a href="#home">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact me</a>
+            <a href="https://drive.google.com/file/d/1BNfx9JUATplmPlSaNr259GnR6Ide-FIB/view">Resume</a>
         </div>
         
         <div id="icons">
@@ -78,14 +28,145 @@
             <a href="https://www.instagram.com/shutter_shockeen/"><img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt=""></a>
         </div>
     </div>
+    <!-- Welcome section/Home -->
+    <div id="home">
+        <h1><span style="color:#05386B;">I am</span> Sanket Hiremath</h1>
+        <h1>I am <span style="color:#05386B;"> Java Back-end Developer </span></h1>
+    </div>
 
+    <!-- About me section -->
     <div id="image">
         <img src="https://media-exp1.licdn.com/dms/image/D5603AQFxl1Ct-QMguQ/profile-displayphoto-shrink_400_400/0/1665459616958?e=1671667200&v=beta&t=Tqk0A3-49ok_cYdaUhxiaXQ_3504sbHg7gjk2ipCT6I" alt="">
         <div id="about">
-            <h1> Hi, I am Sanket Hiremath </h1>
+            <h1> Hi,</h1>
+            <p> I'm a Bachelor of science graduate from Karnataka University Dharwad. 
+                I'm a passionate learner who's always willing to learn and work across 
+                technologies and domains. I love to explore new technologies and leverage 
+                them to solve real-life problems. I'm currently into Java Back-end Development 
+                and working on my Data Structures and Algorithms.</p>
+            
         </div>
+    </div>
+
+    <!-- Skills section -->
+    <div id="skills">
+
+        <h1 class="h1">My Skills</h1>
+        <div>
+            <div>
+                <img src="https://openwhisk.apache.org/images/runtimes/icon-java-notext-color.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://www.pngkey.com/png/full/269-2693201_mysql-logo-circle-png.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://images.clickittech.com/2020/wp-content/uploads/2018/01/20195612/rsz_aws-logo-grande.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="logo">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Projects section -->
+    <div id="projects">
+        <h1 class="h1">My Projects</h1>
+        <div>
+            <div>
+                <img src="https://salesdorado.com/wp-content/uploads/2022/02/happyfox.png" alt="image">
+            </div>
+            <div>
+                <h2 style="font-size:25px; color: #05386B;">HappyFox Clone : </h2>
+                <p>
+                    HappyFox is a company which provides web service support to other 
+                    websites. they offer backend support system for other online 
+                    platforms. 
+                </p>
+                <p>
+                    <span class="p"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                    demo page | Homepage | Responsiveness.
+                </p>
+                <p style="font-weight:bold">
+                    <span class="p">Tech Stack :</span> JavaScript | HTML | CSS
+                </p>
+                <a class="tooltip" href="https://github.com/Sanket01Hiremath/cruel-team-7846">
+                    <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
+                    <span class="tooltiptext">Visit GitHub</span>
+                </a>
+                
+                <a class="tooltip" href="https://silver-dragon-c5c939.netlify.app/">
+                    <img class="icon" src="https://hfweb-assets.s3.amazonaws.com/brand/happyfox-logo.png" alt="">
+                    <span class="tooltiptext">Visit Website</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 style="font-size:25px; color: #05386B;">CultFit Clone : </h2>
+                <p>
+                    Cultfit is a online/offline fitness training platform where professional
+                    personal trainers provide training. It is a paid service. 
+                </p>
+                <p>
+                    <span class="p"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                    demo page | Homepage | Responsiveness.
+                </p>
+                <p>
+                    <span class="p">Areas of responsibility :</span>  fitness page | subpages | navbar | responsiveness.
+                </p>
+                <p style="font-weight:bold">
+                    <span class="p">Tech Stack :</span> JavaScript | HTML | CSS
+                </p>
+                <a class="tooltip" href="https://github.com/Sanket01Hiremath/dusty-hat-6390">
+                    <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
+                    <span class="tooltiptext">Visit GitHub</span>
+                </a>
+                
+                <a class="tooltip" href="https://hilarious-pegasus-23c112.netlify.app/">
+                    <img class="icon" src="https://play-lh.googleusercontent.com/JknArWBicl7xtkb54wn82IMZ9xQ8NE6iitMi16XAlPMwNRXI__B7cTMCimX86QLprw" alt="">
+                    <span class="tooltiptext">Visit Website</span>
+                </a>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalwpJoEpVwGdGXx7C_KnG7ex8LaOskRnxpUMan-ekbSi2PhSJzb98OMd3bjJ7gya8E6M&usqp=CAU" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts section -->
+    <div id="contacts">
+        <h1 class="h1">Cantact Me</h1>
+        <div >
+            <p style="font-size: 20px; color:white"><span>PH : </span> +91 9019486320 </p>
+            <p style="font-size: 20px; color:white"><span>EMAIL : </span> sankethrmth1234@gmail.com </p>
+        </div>
+        <div>
+            <a href="https://github.com/Sanket01Hiremath">
+                <img src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/Sanket01Hiremath/">
+                <img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/shutter_shockeen/">
+                <img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt="">
+            </a>
+        </div>
+        
     </div>
     
 </body>
 </html>
+<script>
+    let image=document.getElementById("image");
+    let about=document.getElementById("about");
+    image.addEventListener("mouseenter",(e)=>{
+        image.style.width="80%";
+        about.style.transition="3s";
+        about.style.opacity=1;
+    })
+</script>
 
