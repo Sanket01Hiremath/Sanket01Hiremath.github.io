@@ -1,5 +1,6 @@
 body{
     background-color: #5cdb95;
+    scroll-behavior: smooth;
 }
 #navbar{
     width:100%;
@@ -17,15 +18,15 @@ body{
 #home h1{
     color:white;
     margin-left: 20px;
-    font-size: 45px;
+    font-size: 4vw;
 }
 #navbar>div{
     display: flex;
     align-items: center;
 }
 #navbar>div>img{
-    width:40px;
-    height:40px;
+    width:5vw;
+    height:5vw;
     margin-left: 30px;
 }
 #image{
@@ -38,7 +39,7 @@ body{
     transition: width 2s;
 }
 #about{
-    height:200px;
+    height:20vw;
     border:2px solid white;
     border-radius: 10px;
     padding:10px;
@@ -49,18 +50,18 @@ body{
 #about h1{
     color:white;
     margin-left: 20px;
-    font-size: 35px;
+    font-size: 3vw;
 }
 #about>p{
     color: white;
-    font-size: 20px;
+    font-size: 1.7vw;
     margin-left: 20px;
     text-align: justify;
 }
 #image>img{
-    border: 2px solid white;
+    border: 2px solid #05386B;
     border-radius: 50%;
-    width:250px;
+    width:22vw;
     margin:23px;
 }
 #icons{
@@ -70,19 +71,19 @@ body{
     margin-right: 30px;
 }
 #icons img,.icon{
-    width: 40px;
+    width: 4vw;
     background-color: white;
     border-radius: 50%;
 }
 
 #menu>a{
-    width:100px;
+    width:9vw;
     text-align: center;
     font-family: sans-serif;
     text-decoration: none;
     color:#05386B;
     font-weight: bold;
-    font-size:18px;
+    font-size:1.5vw;
     padding: 5px;
     border-radius: 5px 5px 0px 0px;
 }
@@ -96,15 +97,15 @@ body{
     text-align: center;
 }
 #skills{
-    margin-top: 50px;
-    padding:50px 0px;
+    margin-top: 3vw;
+    padding:3vw 0px;
     text-align: center;
     background-color: #05386B;
 
 }
 .h1{
     color: white;
-    font-size: 45px;
+    font-size: 4vw;
     font-weight: bold;
 }
 #skills>div{
@@ -112,11 +113,14 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+#skills>div{
+
+}
 #skills>div>div>img{
     background-color: rgba(0, 0, 0, 0.515);
     border-radius: 50%;
     border:4px solid white;
-    width:130px;
+    width:10vw;
     box-shadow: rgba(255, 255, 255, 0.586) 0px 6px 12px -2px, rgba(255, 255, 255, 0.596) 0px 3px 7px -3px;
 }
 #projects{
@@ -137,7 +141,7 @@ body{
 }
 .p{
     color: #05386B;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     font-family: sans-serif;
 }
