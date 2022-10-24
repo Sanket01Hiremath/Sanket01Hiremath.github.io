@@ -49,7 +49,7 @@ body{
         position:fixed;
         z-index: 10;
         top: 50px;
-        background-color: rgba(255, 255, 255, 0.798);
+        background-color: rgba(255, 255, 255, 0.937);
         padding-top: 40px;
         overflow: hidden;
         opacity: 0;
@@ -96,8 +96,14 @@ body{
         margin-top:50px;
         transition: width 2s;
     }
-    
 }
+.subhead{
+    font-size: 3vw;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 #home h1{
     color:white;
     margin-left: 20px;
@@ -129,6 +135,7 @@ body{
     opacity:0;
     overflow: hidden;
     background-color: #05386b72;
+    margin: 0.5vw;
 }
 #about h1{
     color:white;
@@ -198,15 +205,9 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-#skills>div{
-
-}
 #skills>div>div>img{
-    background-color: rgba(0, 0, 0, 0.515);
     border-radius: 50%;
-    border:4px solid white;
     width:10vw;
-    box-shadow: rgba(255, 255, 255, 0.586) 0px 6px 12px -2px, rgba(255, 255, 255, 0.596) 0px 3px 7px -3px;
 }
 #projects{
     margin-top: 50px;
@@ -215,6 +216,7 @@ body{
 #projects>div{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #projects>div>div{
     margin-top: 50px;
@@ -236,12 +238,16 @@ body{
     padding: 20px 0px;
     background-color: rgba(0, 0, 0, 0.752);
 }
-#contacts>div:last-child{
+#contacts>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contacts>div>div>div:last-child{
     display: flex;
     justify-content: center;
     gap:20px;
 }
-#contacts>div img{
+#contacts>div>div>div img{
     width: 4vw;
     background-color: white;
     border-radius: 50%;
