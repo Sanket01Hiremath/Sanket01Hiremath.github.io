@@ -1,6 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #5cdb95;
-    scroll-behavior: smooth;
 }
 #navbar{
     margin-top: -10px;
@@ -24,7 +27,7 @@ body{
         display: none;
     }
     #navbar1{
-        display: block;
+        display: flex;
         margin-top: -10px;
         width:100%;
         background-color: #5cdb95;
@@ -34,9 +37,12 @@ body{
         padding:10px 0px 10px 0px;
         position: sticky;
         top: 0px;
+        justify-content: space-between;
+        border:1px solid red;
     }
-    #navbar1>img:first-child{
+    #navbar1>img:last-child{
         width:3vw;
+        margin-right:30px;
     }
     #slidermenu{
         display: flex;
@@ -48,7 +54,8 @@ body{
         width:80vw;
         position:fixed;
         z-index: 10;
-        top: 50px;
+        top: 35px;
+        right:0;
         background-color: rgba(255, 255, 255, 0.937);
         padding-top: 40px;
         overflow: hidden;
@@ -76,9 +83,6 @@ body{
         height:4vw;
         margin-left: 30px;
     }
-    #navbar1{
-        text-align: center;
-    }
     .mp{
         font-size: 5vw;
         text-decoration: none;
@@ -95,6 +99,12 @@ body{
         margin: auto;
         margin-top:50px;
         transition: width 2s;
+    }
+    #about{
+        width:90%;
+    }
+    #git img{
+        width:95%;
     }
 }
 .subhead{
@@ -188,6 +198,7 @@ body{
 #git{
     text-align: center;
 }
+
 #skills{
     margin-top: 3vw;
     padding:3vw 0px;
@@ -201,9 +212,12 @@ body{
     font-weight: bold;
 }
 #skills>div{
+    width:70%;
+    margin: auto;
     padding:40px;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid black;
 }
 #skills>div>div>img{
     border-radius: 50%;
@@ -217,11 +231,14 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
 }
 #projects>div>div{
     margin-top: 50px;
     text-align: left;
     width:46%;
+    
 }
 #projects>div>div>img{
     width:100%;
