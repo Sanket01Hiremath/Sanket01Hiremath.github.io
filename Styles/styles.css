@@ -3,9 +3,10 @@ body{
     scroll-behavior: smooth;
 }
 #navbar{
+    margin-top: -10px;
     width:100%;
     background-color: #5cdb95;
-    border-radius: 10px;
+    border-radius:0px 0px 10px 10px;
     box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
     border: 0px;
     padding:10px 0px 10px 0px;
@@ -14,6 +15,88 @@ body{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+}
+#slidermenu,#navbar1{
+    display: none;
+}
+@media screen and (min-width:100px) and (max-width:700px) {
+    #navbar{
+        display: none;
+    }
+    #navbar1{
+        display: block;
+        margin-top: -10px;
+        width:100%;
+        background-color: #5cdb95;
+        border-radius:0px 0px 10px 10px;
+        box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
+        border: 0px;
+        padding:10px 0px 10px 0px;
+        position: sticky;
+        top: 0px;
+    }
+    #navbar1>img:first-child{
+        width:3vw;
+    }
+    #slidermenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        border: 1px solid black;
+        height:0;
+        width:80vw;
+        position:fixed;
+        z-index: 10;
+        top: 50px;
+        background-color: rgba(255, 255, 255, 0.798);
+        padding-top: 40px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    #slidermenu>a{
+        width:90%;
+        text-align: center;
+    }
+    #slidermenu>a:hover{
+        background-color: #05386b1c;
+        color: white;
+        border-bottom: 2px solid #05386B;
+    }
+    #slidermenu>div{
+        margin-top: 40px;
+    }
+    #slidermenu>div>a>img{
+        width: 8vw;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .img{
+        width:4vw;
+        height:4vw;
+        margin-left: 30px;
+    }
+    #navbar1{
+        text-align: center;
+    }
+    .mp{
+        font-size: 5vw;
+        text-decoration: none;
+        color: #05386B;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    #image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:300px;
+        height:300px;
+        margin: auto;
+        margin-top:50px;
+        transition: width 2s;
+    }
+    
 }
 #home h1{
     color:white;
@@ -25,8 +108,8 @@ body{
     align-items: center;
 }
 #navbar>div>img{
-    width:5vw;
-    height:5vw;
+    width:4vw;
+    height:4vw;
     margin-left: 30px;
 }
 #image{
@@ -62,7 +145,6 @@ body{
     border: 2px solid #05386B;
     border-radius: 50%;
     width:22vw;
-    margin:23px;
 }
 #icons{
     display: flex;
@@ -94,6 +176,9 @@ body{
 }
 
 #home{
+    text-align: center;
+}
+#git{
     text-align: center;
 }
 #skills{
@@ -157,7 +242,7 @@ body{
     gap:20px;
 }
 #contacts>div img{
-    width: 50px;
+    width: 4vw;
     background-color: white;
     border-radius: 50%;
 }

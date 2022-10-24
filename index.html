@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+    <div id="navbar1">
+        <img id="slider" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt=""> 
+        <img class="img" src="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png" alt="">
+    </div>
+    <div id="slidermenu">
+        <a class="mp" href="#home">Home</a>
+        <a class="mp" href="#home">About me</a>
+        <a class="mp" href="#skills">Skills</a>
+        <a class="mp" href="#projects">Projects</a>
+        <a class="mp" href="#contacts">Contact me</a>
+        <a class="mp" href="https://drive.google.com/file/d/1BNfx9JUATplmPlSaNr259GnR6Ide-FIB/view">Resume</a>
+        <div>
+            <a href="https://github.com/Sanket01Hiremath"><img src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt=""></a>
+            <a href="https://www.linkedin.com/in/Sanket01Hiremath/"><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt=""></a>
+            <a href="https://www.instagram.com/shutter_shockeen/"><img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt=""></a>
+        </div>
+    </div>
     <div id="navbar">
         <div>
             <img src="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png" alt="">
@@ -21,7 +38,6 @@
             <a href="#contacts">Contact me</a>
             <a href="https://drive.google.com/file/d/1BNfx9JUATplmPlSaNr259GnR6Ide-FIB/view">Resume</a>
         </div>
-        
         <div id="icons">
             <a href="https://github.com/Sanket01Hiremath"><img src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt=""></a>
             <a href="https://www.linkedin.com/in/Sanket01Hiremath/"><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt=""></a>
@@ -44,8 +60,10 @@
                 technologies and domains. I love to explore new technologies and leverage 
                 them to solve real-life problems. I'm currently into Java Back-end Development 
                 and working on my Data Structures and Algorithms.</p>
-            
         </div>
+    </div>
+    <div id="git">
+        <h1 class="h1">Git Statestics</h1>
     </div>
 
     <!-- Skills section -->
@@ -166,7 +184,23 @@
     image.addEventListener("mouseenter",(e)=>{
         image.style.width="80%";
         about.style.transition="3s";
-        about.style.opacity=1;
+        about.style.opacity="1";
+    })
+    let slide=document.getElementById("slider");
+    let menu=document.getElementById("slidermenu");
+    slide.addEventListener("click",(e)=>{
+        if(menu.style.height=="100%"){
+            menu.style.height="0";
+            menu.style.transition="2s";
+            menu.style.opacity="0";
+           
+            //menu.style.display="none";
+        }else{
+            menu.style.height="100%";
+            menu.style.transition="2s";
+            menu.style.opacity="1";
+            //menu.style.display="flex";
+        }
     })
 </script>
 
