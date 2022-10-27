@@ -18,9 +18,15 @@ body{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 #slidermenu,#navbar1{
     display: none;
+}
+#home{
+    position: relative;
+    top:100px;
+    opacity: 0;
 }
 @media screen and (min-width:100px) and (max-width:700px) {
     #navbar{
@@ -38,12 +44,14 @@ body{
         position: sticky;
         top: 0px;
         justify-content: space-between;
-        border:1px solid red;
+        z-index: 100;
     }
+
     #navbar1>img:last-child{
         width:3vw;
         margin-right:30px;
     }
+
     #slidermenu{
         display: flex;
         flex-direction: column;
@@ -53,11 +61,10 @@ body{
         height:0;
         width:80vw;
         position:fixed;
-        z-index: 10;
-        top: 35px;
+        z-index: 110;
+        top: 45px;
         right:0;
-        background-color: rgba(255, 255, 255, 0.937);
-        padding-top: 40px;
+        background-color: #05386B;
         overflow: hidden;
         opacity: 0;
     }
@@ -70,10 +77,19 @@ body{
         color: white;
         border-bottom: 2px solid #05386B;
     }
-    #slidermenu>div{
+    #slidermenu>div:first-child{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        text-align: right;
+    }
+    #slidermenu>div:first-child>img{
+        width:40px;
+        margin:0px 25px 0px 0px;
+    }
+    #slidermenu>div:last-child{
         margin-top: 40px;
     }
-    #slidermenu>div>a>img{
+    #slidermenu>div:last-child>a>img{
         width: 8vw;
         background-color: white;
         border-radius: 50%;
@@ -86,7 +102,7 @@ body{
     .mp{
         font-size: 5vw;
         text-decoration: none;
-        color: #05386B;
+        color: #5cdb95;
         font-family: sans-serif;
         font-weight: bold;
     }
@@ -102,9 +118,30 @@ body{
     }
     #about{
         width:90%;
+        opacity: 1;
     }
     #git img{
         width:95%;
+    }
+    #projects{
+        margin-top: 50px;
+        text-align: center;
+    }
+    #projects>div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding: 10px 0px;
+    }
+    #projects>div>div{
+        margin-top: 50px;
+        text-align: left;
+        width:46%;
+        
+    }
+    #projects>div>div>img{
+        width:100%;
     }
 }
 .subhead{
@@ -135,7 +172,9 @@ body{
     height:300px;
     margin: auto;
     margin-top:50px;
-    transition: width 2s;
+    opacity: 0;
+    transition: width 3s;
+    
 }
 #about{
     height:20vw;
@@ -146,6 +185,7 @@ body{
     overflow: hidden;
     background-color: #05386b72;
     margin: 0.5vw;
+    
 }
 #about h1{
     color:white;
@@ -197,6 +237,7 @@ body{
 }
 #git{
     text-align: center;
+    opacity: 0;
 }
 
 #skills{
@@ -223,6 +264,11 @@ body{
     border-radius: 50%;
     width:10vw;
 }
+#skills>div>div>img:hover{
+    width:10.3vw;
+    box-shadow: rgba(255, 255, 255, 0.225) 0px 7px 29px 0px;
+    transition: 0.5s;
+}
 #projects{
     margin-top: 50px;
     text-align: center;
@@ -233,13 +279,23 @@ body{
     align-items: center;
     border-bottom: 1px solid black;
     padding: 10px 0px;
+    
 }
 #projects>div>div{
     margin-top: 50px;
     text-align: left;
-    width:46%;
-    
+    width:46%; 
 }
+
+#projects>div>div:first-child{
+    position: relative;
+    left:-400px;
+}
+#projects>div>div:last-child{
+    position: relative;
+    right:-400px;
+}
+
 #projects>div>div>img{
     width:100%;
 }

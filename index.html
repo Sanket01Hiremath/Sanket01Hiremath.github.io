@@ -14,7 +14,10 @@
         <img id="slider" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt=""> 
     </div>
     <div id="slidermenu">
-        <a class="mp" href="">Home</a>
+        <div style="justify-content:right;">
+            <img id="close" src="https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png" alt="">
+        </div>
+        <a class="mp" href="#navbar">Home</a>
         <a class="mp" href="#home">About me</a>
         <a class="mp" href="#skills">Skills</a>
         <a class="mp" href="#projects">Projects</a>
@@ -200,23 +203,53 @@
 <script>
     let image=document.getElementById("image");
     let about=document.getElementById("about");
-    image.addEventListener("mouseenter",(e)=>{
+    let div1=document.querySelector("#projects>div>div:first-child");
+    let div2=document.querySelector("#projects>div>div:last-child");
+    let div3=document.querySelector("#projects>div:last-child>div:first-child");
+    let div4=document.querySelector("#projects>div:last-child>div:last-child");
+    let home=document.getElementById("home");
+    let git=document.getElementById("git");
+
+    window.onload=(e)=>{
         image.style.width="80%";
-        about.style.transition="3s";
+        image.style.opacity="1";
         about.style.opacity="1";
-    })
+        about.style.transition="2s";
+        home.style.top="0px";
+        home.style.opacity="1";
+        home.style.transition="2s";
+    }
+    window.onscroll=(e)=>{
+        git.style.opacity="1";
+        git.style.transition="2s";
+        div1.style.left="0px";
+        div1.style.transition="2s";
+        div2.style.right="0px";
+        div2.style.transition="2s";
+        div3.style.left="0px";
+        div3.style.transition="2s";
+        div4.style.right="0px";
+        div4.style.transition="2s";
+    }
     let slide=document.getElementById("slider");
+    let closer=document.getElementById("close");
     let menu=document.getElementById("slidermenu");
+    let html=document.querySelector("html");
     slide.addEventListener("click",(e)=>{
-        if(menu.style.height=="100%"){
-            menu.style.height="0";
-            menu.style.transition="1s";
-            menu.style.opacity="0";
-        }else{
             menu.style.height="100%";
             menu.style.transition="1s";
             menu.style.opacity="1";
-        }
+            html.style.overflowY="hidden";
+            menu.style.top="0";
     })
+    closer.addEventListener("click",(e)=>{
+            menu.style.height="0";
+            menu.style.transition="1s";
+            menu.style.opacity="0";
+            html.style.overflowY="scroll";
+            menu.style.top="45px";
+    })
+
+    
 </script>
 
