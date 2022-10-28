@@ -25,7 +25,8 @@ body{
 }
 #home{
     position: relative;
-    top:100px;
+    top:50px;
+    padding-top: 50px;
     opacity: 0;
 }
 
@@ -155,7 +156,7 @@ body{
     transition: 0.5s;
 }
 #projects{
-    margin-top: 50px;
+    padding-top: 50px;
     text-align: center;
 }
 #projects>div{
@@ -194,12 +195,24 @@ body{
     text-align: center;
     margin-top: 50px;
     padding: 20px 0px;
+    padding-top: 50px;
     background-color: rgba(0, 0, 0, 0.752);
 }
 #contacts>div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+#contacts>div>div:first-child>div:last-child>a{
+    font-size: 2vw;
+    width:15vw;
+    background-color: #5cdb95;
+    color: #05386B;
+    text-align: center;
+    padding:5px 0px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 #contacts>div>div:last-child{
     background-color: rgba(0, 0, 0, 0.33);
@@ -279,6 +292,9 @@ body{
     transition: 2s;
     visibility: visible;
   }
+
+
+
   @media screen and (min-width:100px) and (max-width:700px) {
     #navbar{
         display: none;
