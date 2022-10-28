@@ -17,7 +17,7 @@
         <div style="justify-content:right;">
             <img id="close" src="https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png" alt="">
         </div>
-        <a class="mp" href="#navbar">Home</a>
+        <a class="mp" href="body">Home</a>
         <a class="mp" href="#home">About me</a>
         <a class="mp" href="#skills">Skills</a>
         <a class="mp" href="#projects">Projects</a>
@@ -179,21 +179,48 @@
         <h1 class="h1">Contact Me</h1>
         <div>
             <div>
-                <div >
-                    <p style="font-size: 1.5vw; color:white"><span>PH : </span> +91 9019486320 </p>
-                    <p style="font-size: 1.5vw; color:white"><span>EMAIL : </span> sankethrmth1234@gmail.com </p>
-                </div>
-                <div>
-                    <a href="https://github.com/Sanket01Hiremath">
-                        <img src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/in/Sanket01Hiremath/">
-                        <img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/shutter_shockeen/">
-                        <img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt="">
-                    </a>
-                </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUHGteSJ3cYrGYLB8vjn6m7OtGBpRM87OYQ&usqp=CAU" alt=""> 
+                        <p style="font-size: 1.5vw; color:white">
+                            +91 9019486320 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://www.freeiconspng.com/thumbs/gmail-icon/gmail-icon-23.png" alt=""> 
+                        <p style="font-size: 1.5vw; color:white">
+                            sankethrmth1234@gmail.com 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png" alt="">
+                        <a href="https://github.com/Sanket01Hiremath">
+                            <p style="font-size: 1.5vw; color:white">https://github.com/Sanket01Hiremath</p>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-67-433325.png" alt="">
+                        <a href="https://www.linkedin.com/in/Sanket01Hiremath/">
+                            <p style="font-size: 1.5vw; color:white"> https://www.linkedin.com/in/Sanket01Hiremath/</p>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="https://www.clipartmax.com/png/middle/266-2664829_instagram-icon-white-on-black-circle-logo-instagram-black-png.png" alt="">
+                        <a href="https://www.instagram.com/shutter_shockeen/">
+                            <p style="font-size: 1.5vw; color:white"> https://www.instagram.com/shutter_shockeen/</p>
+                        </a>
+                    </div>
+            </div>
+            <div>
+                <h3 style="color:white;">Feedback: </h3>
+                <label for="name"> Name: </label>
+                <input id="name" type="text">
+                <label for="email"> Email: </label>
+                <input id="email" type="email">
+                <label for="phone"> Phone: </label>
+                <input type="phone" id="phone">
+                <label for="feed"> Feedback: </label>
+                <input id="feed" type="text" maxlength="150">
+                <button id="btn">SEND</button>
             </div>
         </div>  
     </div>
@@ -250,6 +277,9 @@
             menu.style.top="45px";
     })
 
-    
+    let feed=document.getElementById("btn");
+    feed.addEventListener("click",(e)=>{
+        alert("ThankYou for your valuable feedback!");
+    })
 </script>
 
