@@ -3,12 +3,12 @@ html{
 }
 
 body{
-    background-color: #5cdb95;
+    background-color: #adcfff;
 }
 #navbar{
     margin-top: -10px;
     width:100%;
-    background-color: #5cdb95;
+    background-color: #63a4ff;
     border-radius:0px 0px 10px 10px;
     box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
     border: 0px;
@@ -69,7 +69,7 @@ body{
     padding:10px;
     opacity:0;
     overflow: hidden;
-    background-color: #05386b72;
+    background-color: #63a4ffda;
     margin: 0.5vw;
     
 }
@@ -85,7 +85,7 @@ body{
     text-align: justify;
 }
 #image>img{
-    border: 2px solid #05386B;
+    border: 2px solid #63a4ff;
     border-radius: 50%;
     width:22vw;
 }
@@ -113,7 +113,7 @@ body{
     border-radius: 5px 5px 0px 0px;
 }
 #menu>a:hover{
-    background-color: #05386b1c;
+    background-color: #63a4ff;
     color: white;
     border-bottom: 2px solid #05386B;
 }
@@ -130,11 +130,11 @@ body{
     margin-top: 3vw;
     padding:3vw 0px;
     text-align: center;
-    background-color: #05386B;
+    background-color: rgba(0, 0, 0, 0.752);
 
 }
 .h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 4vw;
     font-weight: bold;
 }
@@ -206,7 +206,7 @@ body{
 #contacts>div>div:first-child>div:last-child>a{
     font-size: 2vw;
     width:15vw;
-    background-color: #5cdb95;
+    background-color: #63a4ff;
     color: #05386B;
     text-align: center;
     padding:5px 0px;
@@ -229,12 +229,12 @@ body{
     color: wheat;
 }
 #contacts>div>div:last-child>label{
-    color:#5cdb95;
+    color:#63a4ff;
     margin: 5px;
 }
 #contacts>div>div:last-child>button{
     width:100%;
-    background-color: #5cdb95;
+    background-color: #63a4ff;
     color: #05386B;
     text-align: center;
     padding:5px 0px;
@@ -303,7 +303,7 @@ body{
         display: flex;
         margin-top: -10px;
         width:100%;
-        background-color: #5cdb95;
+        background-color: #63a4ff;
         border-radius:0px 0px 10px 10px;
         box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
         border: 0px;
@@ -331,7 +331,7 @@ body{
         z-index: 110;
         top: 45px;
         right:0;
-        background-color: #05386B;
+        background-color: #63a4ff;
         overflow: hidden;
         opacity: 0;
     }
@@ -369,7 +369,7 @@ body{
     .mp{
         font-size: 5vw;
         text-decoration: none;
-        color: #5cdb95;
+        color: #05386B;
         font-family: sans-serif;
         font-weight: bold;
     }
@@ -405,7 +405,7 @@ body{
     #projects>div>div{
         margin-top: 50px;
         text-align: left;
-        width:70%;
+        width:90%;
     }
     #projects>div>div>img{
         width:100%;
