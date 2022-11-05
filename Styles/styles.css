@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 body{
@@ -140,7 +141,7 @@ body{
 #skills>div{
     width:70%;
     margin: auto;
-    padding:40px;
+    padding:5%;
     display: flex;
     justify-content: space-evenly;
     gap: 3vw;
@@ -188,6 +189,12 @@ body{
     font-size: 1.5vw;
     font-weight: bold;
     font-family: sans-serif;
+}
+.P{
+    color: white;
+    font-size: 2vw;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 #contacts{
     text-align: center;
@@ -328,14 +335,13 @@ body{
         flex-direction: column;
         align-items: center;
         gap:20px;
-        border: 1px solid black;
         height:0;
         width:80vw;
         position:fixed;
         z-index: 110;
         top: 45px;
         right:0;
-        background-color: #63a4ff;
+        background-color: #63a4ffe1;
         overflow: hidden;
         opacity: 0;
     }
@@ -349,6 +355,7 @@ body{
         border-bottom: 2px solid #05386B;
     }
     #slidermenu>div:first-child{
+        padding-bottom: 1%;
         border-bottom: 1px solid rgb(0, 0, 0);
         width: 100%;
         text-align: right;
@@ -381,7 +388,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:300px;
+        width:80%;
         height:auto;
         margin: auto;
         margin-top:50px;
@@ -463,7 +470,6 @@ body{
         flex-direction: column;
         align-items: center;
         gap:20px;
-        border: 1px solid black;
         height:0;
         width:80vw;
         position:fixed;
@@ -484,6 +490,8 @@ body{
         border-bottom: 2px solid #05386B;
     }
     #slidermenu>div:first-child{
+        padding-bottom: 3%;
+        padding-top: 2%;
         border-bottom: 1px solid rgb(0, 0, 0);
         width: 100%;
         text-align: right;
@@ -501,8 +509,8 @@ body{
         border-radius: 50%;
     }
     .img{
-        width:4vw;
-        height:4vw;
+        width:6vw;
+        height:6vw;
         margin-left: 30px;
     }
     .mp{
@@ -537,6 +545,10 @@ body{
         height: auto;
         border: 1px solid white;
         border-radius: 10px;
+    }
+    #skills>div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
     #projects{
         margin-top: 50px;
