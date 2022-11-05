@@ -3,12 +3,12 @@ html{
 }
 
 body{
-    background-color: #adcfff;
+    background-color: #63a4ff;
 }
 #navbar{
     margin-top: -10px;
     width:100%;
-    background-color: #63a4ff;
+    background-color: #55a4fd;
     border-radius:0px 0px 10px 10px;
     box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
     border: 0px;
@@ -64,12 +64,11 @@ body{
 }
 #about{
     height:20vw;
-    border:2px solid white;
     border-radius: 10px;
     padding:10px;
     opacity:0;
     overflow: hidden;
-    background-color: #63a4ffda;
+    background-color: #63a4ff73;
     margin: 0.5vw;
     
 }
@@ -85,7 +84,7 @@ body{
     text-align: justify;
 }
 #image>img{
-    border: 2px solid #63a4ff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     width:22vw;
 }
@@ -127,8 +126,8 @@ body{
 }
 
 #skills{
-    margin-top: 3vw;
-    padding:3vw 0px;
+    margin-top: 5vw;
+    padding:5vw 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.752);
 
@@ -144,27 +143,24 @@ body{
     padding:40px;
     display: flex;
     justify-content: space-evenly;
+    gap: 3vw;
     border-bottom: 1px solid black;
 }
 #skills>div>div>img{
     border-radius: 50%;
     width:10vw;
 }
-#skills>div>div>img:hover{
-    width:10.3vw;
-    box-shadow: rgba(255, 255, 255, 0.225) 0px 7px 29px 0px;
-    transition: 0.5s;
-}
 #projects{
-    padding-top: 50px;
+    padding-top: 5vw;
     text-align: center;
+    height: auto;
 }
 #projects>div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid black;
-    padding: 10px 0px;
+    padding: 3% 0px;
     
 }
 #projects>div>div{
@@ -172,15 +168,17 @@ body{
     text-align: left; 
     width: 45%;
 }
-
-#projects>div>div:first-child{
+.calender{
+    width:9%;
+}
+/* #projects>div>div:first-child{
     position: relative;
     left:-400px;
 }
 #projects>div>div:last-child{
     position: relative;
     right:-400px;
-}
+} */
 
 #projects>div>div>img{
     width:100%;
@@ -193,9 +191,8 @@ body{
 }
 #contacts{
     text-align: center;
-    margin-top: 50px;
-    padding: 20px 0px;
-    padding-top: 50px;
+    margin-top: 2vw;
+    padding: 5vw 0;
     background-color: rgba(0, 0, 0, 0.752);
 }
 #contacts>div{
@@ -293,9 +290,16 @@ body{
     visibility: visible;
   }
 
+  .cp{
+    font-size: 1.5vw;
+    color: white;
+  }
+  .pp{
+    font-size: 1.5vw;
+    color: #05386B;
+  }
 
-
-  @media screen and (min-width:100px) and (max-width:700px) {
+  @media screen and (min-width:650px) and (max-width:900px) {
     #navbar{
         display: none;
     }
@@ -378,7 +382,7 @@ body{
         flex-direction: column;
         align-items: center;
         width:300px;
-        height:300px;
+        height:auto;
         margin: auto;
         margin-top:50px;
         transition: width 2s;
@@ -389,6 +393,150 @@ body{
     }
     #git img{
         width:95%;
+    }
+    #projects{
+        margin-top: 10%;
+        text-align: center;
+    }
+    #projects>div{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding: 10px 0px;
+    }
+    #projects>div>div{
+        margin-top: 50px;
+        text-align: left;
+        width:90%;
+    }
+    #projects>div>div>img{
+        width:100%;
+    }
+    #contacts>div{
+        flex-direction: column;
+        width:100%;
+        
+    }
+    #contacts>div>div:last-child{
+        width:70%;
+        margin-top: 30px;
+    }
+    .cp{
+        font-size: 3vw;
+    }
+    .pp{
+        color:#05386B;
+        font-size: 3vw;
+    }
+    #button{
+        width:100vw;
+    }
+}
+@media screen and (min-width:100px) and (max-width:650px){
+    #navbar{
+        display: none;
+    }
+    #navbar1{
+        display: flex;
+        margin-top: -10px;
+        width:100%;
+        background-color: #63a4ff;
+        border-radius:0px 0px 10px 10px;
+        box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
+        border: 0px;
+        padding:10px 0px 10px 0px;
+        position: sticky;
+        top: 0px;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    #navbar1>img:last-child{
+        width:3vw;
+        margin-right:30px;
+    }
+
+    #slidermenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        border: 1px solid black;
+        height:0;
+        width:80vw;
+        position:fixed;
+        z-index: 110;
+        top: 45px;
+        right:0;
+        background-color: #63a4ff;
+        overflow: hidden;
+        opacity: 0;
+    }
+    #slidermenu>a{
+        width:90%;
+        text-align: center;
+    }
+    #slidermenu>a:hover{
+        background-color: #05386b1c;
+        color: white;
+        border-bottom: 2px solid #05386B;
+    }
+    #slidermenu>div:first-child{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        text-align: right;
+    }
+    #slidermenu>div:first-child>img{
+        width:6vw;
+        margin:0px 25px 0px 0px;
+    }
+    #slidermenu>div:last-child{
+        margin-top: 40px;
+    }
+    #slidermenu>div:last-child>a>img{
+        width: 8vw;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .img{
+        width:4vw;
+        height:4vw;
+        margin-left: 30px;
+    }
+    .mp{
+        font-size: 5vw;
+        text-decoration: none;
+        color: #05386B;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    #image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:300px;
+        height: auto;
+        margin: auto;
+        margin-top:50px;
+        transition: width 2s;
+    }
+    #about{
+        width:90%;
+        height: auto;
+        opacity: 1;
+    }
+    #about p{
+        font-size: 2.5vw;
+
+    }
+    #git img{
+        width:95%;
+        margin-top: 10px;
+        height: auto;
+        border: 1px solid white;
+        border-radius: 10px;
     }
     #projects{
         margin-top: 50px;
@@ -418,5 +566,15 @@ body{
     #contacts>div>div:last-child{
         width:70%;
         margin-top: 30px;
+    }
+    .cp{
+        font-size: 3vw;
+    }
+    .pp{
+        font-size: 3vw;
+        color:#05386B;
+    }
+    #button{
+        width:100vw;
     }
 }

@@ -7,6 +7,7 @@
     <title>Sanket Hiremath</title>
     <link rel="icon" type="image/x-icon" href="https://www.squirrelsystems.com/wp-content/uploads/2021/05/Squirrel_Icon_White_hidpi.png">
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/responsiveCalender.css">
 </head>
 <body>
     <div id="navbar1">
@@ -67,18 +68,22 @@
     </div>
     <div id="git">
         <h1 class="h1">Git <span style="color:#05386B;"> Statestics </span></h1>
-        <a href="https://github.com/Sanket01Hiremath/github-readme-stats">
-            <img alt="7oSkaaa's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Sanket01Hiremath&show_icons=true&count_private=true&theme=transparent" height="192px"/>
-        </a>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sanket01Hiremath&langs_count=10&show_icons=true&locale=en&layout=compact&theme=transparent&b" alt="Sanket01Hiremath" height="192px"/>
+        <div>
+            <a href="https://github.com/Sanket01Hiremath/">
+                <img alt="7oSkaaa's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Sanket01Hiremath&show_icons=true&count_private=true&theme=transparent" height="192px"/>
+            </a>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sanket01Hiremath&langs_count=10&show_icons=true&locale=en&layout=compact&theme=transparent&b" alt="Sanket01Hiremath" height="192px"/>
+        </div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
     </div>
+    
 
-
-    <!-- Skills section -->
+    <!--TeckStack and Tools -->
     <div id="skills">
-
-        <h1 class="h1">My <span style="color: #63a4ff;"> Skills </span></h1>
-        <p class="subhead">BackEnd</p>
+        <h1 class="h1"><span style="color:#63a4ff ;"> Tech </span>Stack</h1>
         <div>
             <div>
                 <img src="https://openwhisk.apache.org/images/runtimes/icon-java-notext-color.png" alt="logo">
@@ -90,11 +95,8 @@
                 <img src="https://images.clickittech.com/2020/wp-content/uploads/2018/01/20195612/rsz_aws-logo-grande.png" alt="logo">
             </div>
             <div>
-                <img src="https://miro.medium.com/max/500/1*AbiX4LwtSNozoyfypcKvEg.png" alt="logo">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/131026142/original/9b1c1cebb651cd68d16dc1baf84c2559f3eab540/create-a-spring-boot-application-based-on-your-requirements.png" alt="logo">
             </div>
-        </div>
-        <p class="subhead">FrontEnd</p>
-        <div>
             <div>
                 <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="logo">
             </div>
@@ -104,9 +106,22 @@
             <div>
                 <img src="https://www.citypng.com/public/uploads/small/11662226392uom4gsi9ddb1c81ipfx2u4imargvwq7uskhdui1pj4f6xufjz0jkfzqzduhjuifts0dzcnykgszw6isfutq2nlwb51ef4gm0dt8d.png" alt="logo">
             </div>
-            
         </div>
-        
+        <h1 class="h1"><span style="color:#63a4ff ;"> Tools </span></h1>
+        <div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/2048px-IntelliJ_IDEA_Icon.svg.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://pivotal.gallerycdn.vsassets.io/extensions/pivotal/vscode-boot-dev-pack/0.1.0/1629148309593/Microsoft.VisualStudio.Services.Icons.Default" alt="logo">
+            </div>
+            <div>
+                <img src="https://seeklogo.com/images/V/visual-studio-code-logo-284BC24C39-seeklogo.com.png" alt="logo">
+            </div>
+            <div>
+                <img src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" alt="logo">
+            </div>
+        </div>
     </div>
 
     <!-- Projects section -->
@@ -118,17 +133,17 @@
             </div>
             <div>
                 <h2 style="font-size:2vw; color: #05386B;">HappyFox Clone : </h2>
-                <p style="font-size:1.6vw;">
+                <p class="pp">
                     HappyFox is a company which provides web service support to other 
                     websites. they offer backend support system for other online 
                     platforms. 
                 </p>
-                <p style="font-size:1.6vw;">
-                    <span class="p"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                <p class="pp">
+                    <span class="pp"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
                     demo page | Homepage | Responsiveness.
                 </p>
-                <p style="font-size:1.6vw; font-weight:bold">
-                    <span class="p">Tech Stack :</span> JavaScript | HTML | CSS
+                <p style="font-weight:bold" class="pp">
+                    <span class="pp">Tech Stack :</span> JavaScript | HTML | CSS
                 </p>
                 <a class="tooltip" href="https://github.com/Sanket01Hiremath/cruel-team-7846">
                     <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
@@ -144,19 +159,79 @@
         <div>
             <div>
                 <h2 style="font-size:2vw; color: #05386B;">CultFit Clone : </h2>
-                <p style="font-size:1.6vw;">
+                <p class="pp">
                     Cultfit is a online/offline fitness training platform where professional
                     personal trainers provide training. It is a paid service. 
                 </p>
-                <p style="font-size:1.6vw;">
-                    <span class="p"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                <p class="pp">
+                    <span class="pp"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
                     demo page | Homepage | Responsiveness.
                 </p>
-                <p style="font-size:1.6vw;">
-                    <span class="p">Areas of responsibility :</span>  fitness page | subpages | navbar | responsiveness.
+                <p class="pp">
+                    <span class="pp">Areas of responsibility :</span>  fitness page | subpages | navbar | responsiveness.
                 </p>
-                <p style="font-size:1.6vw; font-weight:bold">
-                    <span class="p">Tech Stack :</span> JavaScript | HTML | CSS
+                <p style="font-weight:bold" class="pp">
+                    <span class="pp">Tech Stack :</span> JavaScript | HTML | CSS
+                </p>
+                <a class="tooltip" href="https://github.com/Sanket01Hiremath/dusty-hat-6390">
+                    <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
+                    <span class="tooltiptext">Visit GitHub</span>
+                </a>
+                
+                <a class="tooltip" href="https://hilarious-pegasus-23c112.netlify.app/">
+                    <img class="icon" src="https://play-lh.googleusercontent.com/JknArWBicl7xtkb54wn82IMZ9xQ8NE6iitMi16XAlPMwNRXI__B7cTMCimX86QLprw" alt="">
+                    <span class="tooltiptext">Visit Website</span>
+                </a>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalwpJoEpVwGdGXx7C_KnG7ex8LaOskRnxpUMan-ekbSi2PhSJzb98OMd3bjJ7gya8E6M&usqp=CAU" alt="image">
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://salesdorado.com/wp-content/uploads/2022/02/happyfox.png" alt="image">
+            </div>
+            <div>
+                <h2 style="font-size:2vw; color: #05386B;">HappyFox Clone : </h2>
+                <p class="pp">
+                    HappyFox is a company which provides web service support to other 
+                    websites. they offer backend support system for other online 
+                    platforms. 
+                </p>
+                <p class="pp">
+                    <span class="pp"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                    demo page | Homepage | Responsiveness.
+                </p>
+                <p style="font-weight:bold" class="pp">
+                    <span class="pp">Tech Stack :</span> JavaScript | HTML | CSS
+                </p>
+                <a class="tooltip" href="https://github.com/Sanket01Hiremath/cruel-team-7846">
+                    <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
+                    <span class="tooltiptext">Visit GitHub</span>
+                </a>
+                
+                <a class="tooltip" href="https://silver-dragon-c5c939.netlify.app/">
+                    <img class="icon" src="https://hfweb-assets.s3.amazonaws.com/brand/happyfox-logo.png" alt="">
+                    <span class="tooltiptext">Visit Website</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 style="font-size:2vw; color: #05386B;">CultFit Clone : </h2>
+                <p class="pp">
+                    Cultfit is a online/offline fitness training platform where professional
+                    personal trainers provide training. It is a paid service. 
+                </p>
+                <p class="pp">
+                    <span class="pp"> Features :</span> Homepage | Pricing page | Navbar | Dropdown menus | Get 
+                    demo page | Homepage | Responsiveness.
+                </p>
+                <p class="pp">
+                    <span class="pp">Areas of responsibility :</span>  fitness page | subpages | navbar | responsiveness.
+                </p>
+                <p style="font-weight:bold" class="pp">
+                    <span class="pp">Tech Stack :</span> JavaScript | HTML | CSS
                 </p>
                 <a class="tooltip" href="https://github.com/Sanket01Hiremath/dusty-hat-6390">
                     <img class="icon" src="https://down.imgspng.com/thumb.php?src=https://down.imgspng.com/download/0720/github_PNG85.png&h=200&w=200&zc=1" alt="">
@@ -174,6 +249,8 @@
         </div>
     </div>
 
+    
+
     <!-- Contacts section -->
     <div id="contacts">
         <h1 class="h1"><span style="color:#63a4ff ;"> Contact </span>Me</h1>
@@ -181,36 +258,36 @@
             <div>
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUHGteSJ3cYrGYLB8vjn6m7OtGBpRM87OYQ&usqp=CAU" alt=""> 
-                        <p style="font-size: 1.5vw; color:white">
+                        <p class="cp">
                             +91 9019486320 
                         </p>
                     </div>
                     <div>
                         <img src="https://www.freeiconspng.com/thumbs/gmail-icon/gmail-icon-23.png" alt=""> 
-                        <p style="font-size: 1.5vw; color:white">
+                        <p class="cp">
                             sankethrmth1234@gmail.com 
                         </p>
                     </div>
                     <div>
                         <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png" alt="">
                         <a href="https://github.com/Sanket01Hiremath">
-                            <p style="font-size: 1.5vw; color:white">https://github.com/Sanket01Hiremath</p>
+                            <p class="cp">https://github.com/Sanket01Hiremath</p>
                         </a>
                     </div>
                     <div>
                         <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-67-433325.png" alt="">
                         <a href="https://www.linkedin.com/in/Sanket01Hiremath/">
-                            <p style="font-size: 1.5vw; color:white"> https://www.linkedin.com/in/Sanket01Hiremath/</p>
+                            <p class="cp"> https://www.linkedin.com/in/Sanket01Hiremath/</p>
                         </a>
                     </div>
                     <div>
                         <img src="https://www.clipartmax.com/png/middle/266-2664829_instagram-icon-white-on-black-circle-logo-instagram-black-png.png" alt="">
                         <a href="https://www.instagram.com/shutter_shockeen/">
-                            <p style="font-size: 1.5vw; color:white"> https://www.instagram.com/shutter_shockeen/</p>
+                            <p class="cp"> https://www.instagram.com/shutter_shockeen/</p>
                         </a>
                     </div>
                     <div>
-                        <a href="https://drive.google.com/file/d/1BNfx9JUATplmPlSaNr259GnR6Ide-FIB/view">Resume</a>
+                        <a id="button" href="https://drive.google.com/file/d/1BNfx9JUATplmPlSaNr259GnR6Ide-FIB/view" target="_blank">Resume</a>
                     </div>
             </div>
             <div>
@@ -230,6 +307,13 @@
     
 </body>
 </html>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "Sanket01Hiremath", { responsive: true });
+</script>
 <script>
     let image=document.getElementById("image");
     let about=document.getElementById("about");
@@ -248,18 +332,8 @@
         home.style.top="0px";
         home.style.opacity="1";
         home.style.transition="2s";
-    }
-    window.onscroll=(e)=>{
         git.style.opacity="1";
         git.style.transition="2s";
-        div1.style.left="0px";
-        div1.style.transition="2s";
-        div2.style.right="0px";
-        div2.style.transition="2s";
-        div3.style.left="0px";
-        div3.style.transition="2s";
-        div4.style.right="0px";
-        div4.style.transition="2s";
     }
     let slide=document.getElementById("slider");
     let closer=document.getElementById("close");
