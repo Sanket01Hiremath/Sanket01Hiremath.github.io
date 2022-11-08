@@ -6,6 +6,17 @@ html{
 body{
     background-color: #63a4ff;
 }
+#resumeabout{
+    font-size: 2vw;
+    background-color: #05386B;
+    color: #63a4ff;
+    text-align: center;
+    padding:5px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+}
 #navbar{
     margin-top: -10px;
     width:100%;
@@ -440,6 +451,9 @@ body{
     #button{
         width:100vw;
     }
+    #feedback{
+        font-size: 3vw;
+    }
 }
 @media screen and (min-width:100px) and (max-width:650px){
     #navbar{
@@ -588,5 +602,8 @@ body{
     }
     #button{
         width:100vw;
+    }
+    #feedback{
+        font-size: 3vw;
     }
 }
