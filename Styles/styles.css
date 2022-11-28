@@ -6,6 +6,11 @@ html{
 body{
     background-color: #63a4ff;
 }
+#background{
+    margin:0px -0.6vw;
+    background: rgb(99,164,255);
+background: radial-gradient(circle, rgba(99,164,255,1) 0%, rgba(0,110,255,1) 100%);
+}
 #resumeabout{
     font-size: 2vw;
     background-color: #05386B;
@@ -80,7 +85,6 @@ body{
     padding:10px;
     opacity:0;
     overflow: hidden;
-    background-color: #63a4ff73;
     margin: 0.5vw;
     
 }
@@ -138,11 +142,13 @@ body{
 }
 
 #skills{
+    margin:0px -0.6vw;
     margin-top: 5vw;
     padding:5vw 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.752);
-
+    background: rgb(0,67,156);
+    background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
 }
 .h1{
     color: rgb(255, 255, 255);
@@ -209,9 +215,12 @@ body{
 }
 #contacts{
     text-align: center;
+    margin:0px -0.6vw;
     margin-top: 2vw;
     padding: 5vw 0;
     background-color: rgba(0, 0, 0, 0.752);
+    background: rgb(0,67,156);
+    background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
 }
 #contacts>div{
     display: flex;
