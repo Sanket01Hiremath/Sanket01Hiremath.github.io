@@ -75,8 +75,7 @@ body{
     margin: auto;
     margin-top:50px;
     opacity: 0;
-    transition: width 3s;
-    
+    transition: width 1s;
 }
 #about{
     height:20vw;
