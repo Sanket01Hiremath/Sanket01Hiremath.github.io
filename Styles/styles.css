@@ -10,17 +10,6 @@ body{
     margin:0px -0.6vw;
     background: rgb(99,164,255);
 }
-#resumeabout{
-    font-size: 2vw;
-    background-color: #05386B;
-    color: #63a4ff;
-    text-align: center;
-    padding:5px 5px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: auto;
-}
 #navbar{
     margin-top: -10px;
     width:100%;
@@ -76,6 +65,10 @@ body{
     margin-top:50px;
     opacity: 0;
     transition: width 1s;
+    
+}
+#image img{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 #about{
     height:20vw;
@@ -112,6 +105,7 @@ body{
     width: 4vw;
     background-color: white;
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 1px, rgba(0, 0, 0, 0.3) 0px 4px 2px, rgba(0, 0, 0, 0.3) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.3) 0px 32px 16px;
 }
 
 #menu>a{
@@ -126,9 +120,10 @@ body{
     border-radius: 5px 5px 0px 0px;
 }
 #menu>a:hover{
-    background-color: #63a4ff;
+    background-color: transparent;
     color: white;
     border-bottom: 2px solid #05386B;
+    transition: 0.5s;
 }
 
 #home{
@@ -152,19 +147,26 @@ body{
     color: rgb(255, 255, 255);
     font-size: 4vw;
     font-weight: bold;
+    margin-top: 50px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 1);
 }
 #skills>div{
     width:70%;
     margin: auto;
     padding:5%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: space-evenly;
     gap: 3vw;
     border-bottom: 1px solid black;
 }
+#skills>div:last-child{
+    grid-template-columns: repeat(5,1fr);
+}
 #skills>div>div>img{
     border-radius: 50%;
     width:10vw;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 #projects{
     padding-top: 5vw;
@@ -177,12 +179,14 @@ body{
     align-items: center;
     border-bottom: 1px solid black;
     padding: 3% 0px;
-    
 }
 #projects>div>div{
     margin-top: 50px;
     text-align: left; 
     width: 45%;
+}
+.front>img{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.3) 0px 8px 4px, rgba(0, 0, 0, 0.3) 0px 16px 8px, rgba(0, 0, 0, 0.3) 0px 32px 16px;
 }
 .calender{
     width:9%;
@@ -225,16 +229,26 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-#contacts>div>div:first-child>div:last-child>a{
+
+.button{
     font-size: 2vw;
-    width:15vw;
+    width:auto;
     background-color: #63a4ff;
     color: #05386B;
     text-align: center;
-    padding:5px 0px;
-    margin: 5px;
+    padding:0.5vw 4vw;
+    margin: auto;
     font-weight: bold;
     border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #05386B;
+}
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.5s;
+}
+#top>div{
+    margin: auto;
 }
 #contacts>div>div:last-child{
     background-color: rgba(0, 0, 0, 0.33);
@@ -275,6 +289,9 @@ body{
     text-decoration: none;
     color:white;
 }
+#top>div:last-child>a{
+    color: #05386B;
+}
 #contacts>div>div{
     display: flex;
     flex-direction: column;
@@ -286,9 +303,8 @@ body{
     background-color: white;
     border-radius: 50%;
 }
-
 /* popup message */
-.tooltip {
+  .tooltip {
     position: relative;
     display: inline-block;
   }
@@ -311,7 +327,6 @@ body{
   
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
-    transition: 2s;
     visibility: visible;
   }
 
@@ -324,7 +339,7 @@ body{
     color: #05386B;
   }
 
-  @media screen and (min-width:650px) and (max-width:900px) {
+@media screen and (min-width:650px) and (max-width:900px) {
     #navbar{
         display: none;
     }
@@ -341,6 +356,7 @@ body{
         top: 0px;
         justify-content: space-between;
         z-index: 100;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     }
 
     #navbar1>img:last-child{
@@ -419,6 +435,13 @@ body{
     #git img{
         width:95%;
     }
+    .button{
+        font-size: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    #skills>div:last-child{
+        grid-template-columns: repeat(3,1fr);
+    }
     #projects{
         margin-top: 10%;
         text-align: center;
@@ -442,11 +465,11 @@ body{
     #contacts>div{
         flex-direction: column;
         width:100%;
-        
     }
     #contacts>div>div:last-child{
         width:70%;
         margin-top: 30px;
+        
     }
     .cp{
         font-size: 3vw;
@@ -500,6 +523,7 @@ body{
         background-color: #63a4ff;
         overflow: hidden;
         opacity: 0;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     }
     #slidermenu>a{
         width:90%;
@@ -567,8 +591,15 @@ body{
         border: 1px solid white;
         border-radius: 10px;
     }
+    .button{
+        font-size: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
     #skills>div{
         display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #skills>div:last-child{
         grid-template-columns: repeat(3,1fr);
     }
     #projects{
@@ -582,6 +613,7 @@ body{
         align-items: center;
         border-bottom: 1px solid black;
         padding: 10px 0px;
+
     }
     #projects>div>div{
         margin-top: 50px;
@@ -594,7 +626,6 @@ body{
     #contacts>div{
         flex-direction: column;
         width:100%;
-        
     }
     #contacts>div>div:last-child{
         width:70%;
@@ -606,9 +637,6 @@ body{
     .pp{
         font-size: 3vw;
         color:#05386B;
-    }
-    #button{
-        width:100vw;
     }
     #feedback{
         font-size: 3vw;
