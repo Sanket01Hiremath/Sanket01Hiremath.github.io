@@ -30,8 +30,9 @@ body{
 }
 #home{
     position: relative;
-    top:50px;
-    padding-top: 50px;
+    top:5vw;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
     opacity: 0;
 }
 
@@ -132,6 +133,7 @@ body{
 #git{
     text-align: center;
     opacity: 0;
+    margin-top: 4vw;
 }
 
 #skills{
@@ -223,6 +225,7 @@ body{
     background-color: rgba(0, 0, 0, 0.752);
     background: rgb(0,67,156);
     background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
+    
 }
 #contacts>div{
     display: flex;
@@ -251,7 +254,7 @@ body{
     margin: auto;
 }
 #contacts>div>div:last-child{
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0);
     padding: 30px;
     border-radius: 10px;
     width:30%;
@@ -302,6 +305,13 @@ body{
     height:3vw;
     background-color: white;
     border-radius: 50%;
+}
+#feedback{
+    background-image: url("https://www.careerguide.com/career/wp-content/uploads/2020/03/full-stack-development.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vw;
 }
 /* popup message */
   .tooltip {
@@ -505,7 +515,7 @@ body{
     }
 
     #navbar1>img:last-child{
-        width:3vw;
+        width:4vw;
         margin-right:30px;
     }
 
