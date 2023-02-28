@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color: #63a4ff;
+    background-color: #c7c7c7;
 }
 #background{
     margin:0px -0.6vw;
@@ -13,7 +13,8 @@ body{
 #navbar{
     margin-top: -10px;
     width:100%;
-    background-color: #55a4fd;
+    background-color: #55a3fd6a;
+    backdrop-filter: blur(8px);
     border-radius:0px 0px 10px 10px;
     box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
     border: 0px;
@@ -145,7 +146,7 @@ body{
     padding:5vw 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.752);
-    background: rgb(0,67,156);
+    background: rgba(0, 68, 156, 0.396);
     background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
 }
 .h1{
@@ -245,15 +246,14 @@ iframe{
 .button{
     font-size: 2vw;
     width:auto;
-    background-color: #63a4ff;
-    color: #05386B;
+    background-color: #63a4ffac;
+    color: #ffffff;
     text-align: center;
     padding:0.5vw 4vw;
     margin: auto;
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-    border: 1px solid #05386B;
 }
 .button:hover{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -311,8 +311,8 @@ iframe{
     align-items: flex-start;
 }
 #contacts>div>div>div img{
-    width: 3vw;
-    height:3vw;
+    width: 4vw;
+    height:4vw;
     background-color: white;
     border-radius: 50%;
 }
@@ -349,7 +349,6 @@ iframe{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-
   .cp{
     font-size: 1.5vw;
     color: white;
@@ -359,7 +358,7 @@ iframe{
     color: #05386B;
   }
 
-@media screen and (min-width:650px) and (max-width:1100px) {
+@media screen and (min-width:650px) and (max-width:900px) {
     #navbar{
         display: none;
     }
@@ -367,7 +366,8 @@ iframe{
         display: flex;
         margin-top: -10px;
         width:100%;
-        background-color: #63a4ff;
+        background-color: #55a3fd6a;
+        backdrop-filter: blur(8px);
         border-radius:0px 0px 10px 10px;
         box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
         border: 0px;
@@ -395,7 +395,8 @@ iframe{
         z-index: 110;
         top: 45px;
         right:0;
-        background-color: #63a4ffe1;
+        background-color: #55a3fd6a;
+        backdrop-filter: blur(8px);
         overflow: hidden;
         opacity: 0;
     }
@@ -448,9 +449,18 @@ iframe{
         margin-top:50px;
         transition: width 2s;
     }
+    #image>img{
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        width:28vw;
+    }
     #about{
         width:90%;
         opacity: 1;
+        height: auto;
+    }
+    #about p{
+        font-size: 2.5vw;
     }
     #git img{
         width:95%;
@@ -498,6 +508,10 @@ iframe{
         margin-top: 30px;
         
     }
+    #contacts>div>div>div img{
+        width: 7vw;
+        height:7vw;
+    }
     .cp{
         font-size: 3vw;
     }
@@ -523,7 +537,8 @@ iframe{
         display: flex;
         margin-top: -10px;
         width:100%;
-        background-color: #63a4ff;
+        background-color: #55a3fd6a;
+        backdrop-filter: blur(8px);
         border-radius:0px 0px 10px 10px;
         box-shadow: rgba(108, 108, 108, 0.365) 0px 3px 8px;;
         border: 0px;
@@ -550,7 +565,8 @@ iframe{
         z-index: 110;
         top: 45px;
         right:0;
-        background-color: #63a4ff;
+        background-color: #55a3fd6a;
+        backdrop-filter: blur(8px);
         overflow: hidden;
         opacity: 0;
         box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
@@ -605,13 +621,18 @@ iframe{
         margin-top:50px;
         transition: width 2s;
     }
+    #image>img{
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        width:32vw;
+    }
     #about{
         width:90%;
         height: auto;
         opacity: 1;
     }
     #about p{
-        font-size: 2.5vw;
+        font-size: 4vw;
 
     }
     #git img{
@@ -663,6 +684,10 @@ iframe{
     #contacts>div>div:last-child{
         width:70%;
         margin-top: 30px;
+    }
+    #contacts>div>div>div img{
+        width: 8vw;
+        height:8vw;
     }
     .cp{
         font-size: 3vw;

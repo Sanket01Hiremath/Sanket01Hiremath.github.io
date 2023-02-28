@@ -23,11 +23,11 @@ let image=document.getElementById("image");
     let menu=document.getElementById("slidermenu");
     let html=document.querySelector("html");
     let close1=document.querySelector("#slidermenu:nth-child(2)");
-    let close2=document.querySelector("#slidermenu:nth-child(3)");
-    let close3=document.querySelector("#slidermenu:nth-child(4)");
-    let close4=document.querySelector("#slidermenu:nth-child(5)");
-    let close5=document.querySelector("#slidermenu:nth-child(6)");
-    let close6=document.querySelector("#slidermenu:nth-child(7)");
+    // let close2=document.querySelector("#slidermenu:nth-child(3)");
+    // let close3=document.querySelector("#slidermenu:nth-child(4)");
+    // let close4=document.querySelector("#slidermenu:nth-child(5)");
+    // let close5=document.querySelector("#slidermenu:nth-child(6)");
+    // let close6=document.querySelector("#slidermenu:nth-child(7)");
 
     slide.addEventListener("click",(e)=>{
             menu.style.height="100%";
