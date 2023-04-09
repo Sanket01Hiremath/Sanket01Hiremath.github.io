@@ -94,7 +94,7 @@ body{
 }
 #image>img{
     border: 2px solid #ffffff;
-    border-radius: 50%;
+    border-radius: 10%;
     width:22vw;
 }
 #icons{
@@ -450,8 +450,6 @@ iframe{
         transition: width 2s;
     }
     #image>img{
-        border: 2px solid #ffffff;
-        border-radius: 50%;
         width:28vw;
     }
     #about{
@@ -622,8 +620,6 @@ iframe{
         transition: width 2s;
     }
     #image>img{
-        border: 2px solid #ffffff;
-        border-radius: 50%;
         width:32vw;
     }
     #about{
