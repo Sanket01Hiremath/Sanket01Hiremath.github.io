@@ -146,8 +146,8 @@ body{
     padding:5vw 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.752);
-    background: rgba(0, 68, 156, 0.396);
-    background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
+    /* background: rgba(0, 68, 156, 0.396); */
+    /* background: radial-gradient(circle, #3491fb6a, rgb(3, 3, 146) 100%); */
 }
 .h1{
     color: rgb(255, 255, 255);
@@ -233,8 +233,8 @@ iframe{
     margin-top: 2vw;
     padding: 5vw 0;
     background-color: rgba(0, 0, 0, 0.752);
-    background: rgb(0,67,156);
-    background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%);
+    /* background: rgb(0,67,156);
+    background: radial-gradient(circle, rgba(0,67,156,1) 0%, rgba(1,1,73,1) 100%); */
     
 }
 #contacts>div{
